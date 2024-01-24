@@ -49,3 +49,10 @@ Counter >> increment [
 
 	self count: self count + 1
 ]
+
+{ #category : #initialization }
+Counter >> initialize [ 
+	
+	super initialize.
+	count := 0
+]
