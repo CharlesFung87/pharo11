@@ -37,3 +37,15 @@ Counter >> count [
 Counter >> count: aSmallInteger [ 
 	count := aSmallInteger
 ]
+
+{ #category : #API }
+Counter >> decrement [
+
+	self count: self count - 1
+]
+
+{ #category : #API }
+Counter >> increment [
+
+	self count: self count + 1
+]
