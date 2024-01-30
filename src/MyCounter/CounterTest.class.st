@@ -34,3 +34,10 @@ CounterTest >> testInitialize [
 
 	self assert: Counter new count equals: 0
 ]
+
+{ #category : #tests }
+CounterTest >> testPrintSomething [
+	| c |
+	c := Counter new.
+	self assert: (c printSomething: 'hello') equals: 'message: hello'
+]
