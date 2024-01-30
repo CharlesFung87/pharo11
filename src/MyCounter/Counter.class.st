@@ -56,3 +56,9 @@ Counter >> initialize [
 	super initialize.
 	count := 0
 ]
+
+{ #category : #utilities }
+Counter >> printSomething: message [
+
+	^'message: ', message
+]
